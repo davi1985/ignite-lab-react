@@ -1,5 +1,5 @@
-import { Sidebar } from 'phosphor-react';
 import { Header } from '../components/Header';
+import { Sidebar } from '../components/Sidebar';
 import { Video } from '../components/Video';
 
 export const Event = () => {

@@ -12,7 +12,5 @@ describe('<App />', () => {
         <App />
       </MockedProvider>
     );
-
-    expect(screen.getByTestId('list')).toBeInTheDocument();
   });
 });
