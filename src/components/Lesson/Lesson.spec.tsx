@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
 import { Lesson } from '.';
 
 const mock = [
@@ -26,7 +27,8 @@ describe('Lesson component', () => {
         availableAt={new Date(data.availableAt)}
         slug={data.slug}
         type="class"
-      />
+      />,
+      { wrapper: BrowserRouter }
     );
 
     const linkContainer = screen.getByRole('link');
@@ -42,12 +44,15 @@ describe('Lesson component', () => {
         title={data.title}
         availableAt={new Date(data.availableAt)}
         slug={data.slug}
-        type="class"
-      />
+        type="live"
+      />,
+      { wrapper: BrowserRouter }
     );
 
     const notAvailableLesson = screen.getByText(/em breve/i);
+    const lessonTypeLabel = screen.getByText(/ao vivo/i);
 
     expect(notAvailableLesson).toBeInTheDocument();
+    expect(lessonTypeLabel).toBeInTheDocument();
   });
 });
