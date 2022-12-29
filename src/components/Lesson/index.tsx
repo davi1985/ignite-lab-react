@@ -1,7 +1,7 @@
 import { isPast } from 'date-fns';
 import { CheckCircle, Lock } from 'phosphor-react';
 import { Link } from 'react-router-dom';
-import { availableDateFormatted } from '../../utils/utils';
+import { availableDateFormatted } from '../../utils';
 import { LessonProps } from './types';
 
 export const Lesson = ({ title, slug, availableAt, type }: LessonProps) => {
