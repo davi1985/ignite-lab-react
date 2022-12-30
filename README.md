@@ -7,7 +7,7 @@
 <hr>
 
 <p>
-  <img src="screenshot.png"/>
+  <img src="./src/assets/screenshot.png"/>
 </p>
 
 ## :dart: About
