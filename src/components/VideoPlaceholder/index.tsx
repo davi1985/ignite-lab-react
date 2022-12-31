@@ -1,7 +1,7 @@
 export const VideoPlaceholder = () => (
   <div
     role="status"
-    className="flex flex-1 flex-col justify-center items-center bg-gray-300 rounded-lg animate-pulse dark:bg-gray-700"
+    className="flex flex-1 flex-col justify-center items-center bg-gray-700 rounded-lg animate-pulse dark:bg-gray-700"
   >
     <svg
       className="w-12 h-12 text-gray-200 dark:text-gray-600"
